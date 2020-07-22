@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router'
-import axios from 'axios'
+import React from 'react'
 import Head from 'next/head'
+import axios from '../../utils/axios'
 
 export default function Video({ video }) {
   if (!video) {
@@ -23,9 +23,7 @@ export async function getServerSideProps(context) {
   const { videoId } = context.params
   let video = null
   try {
-    const response = await axios.get(
-      `http://localhost:4000/api/videos/${videoId}`
-    )
+    const response = await axios.get(`/api/videos/${videoId}`)
     video = response.data
   } catch (error) {}
   return {

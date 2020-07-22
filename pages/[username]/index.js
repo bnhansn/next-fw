@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import axios from '../../utils/axios'
 import TabLayout from '../../components/TabLayout'
 
-export function Hashtag({ hashtag, children }) {
+export function Channel({ user, children }) {
   const router = useRouter()
-  const { tag } = router.query
+  const { username } = router.query
   const [videos, setVideos] = useState([])
 
   useEffect(() => {
     async function fetchVideos() {
       try {
-        const response = await axios.get(`/api/hashtags/${tag}/videos`)
+        const response = await axios.get(`/api/users/${username}/videos`)
         setVideos(response.data.videos)
       } catch (error) {}
     }
@@ -21,26 +21,27 @@ export function Hashtag({ hashtag, children }) {
     return () => {
       setVideos([])
     }
-  }, [tag])
+  }, [username])
 
-  if (!hashtag) {
-    return <div>Hashtag Not Found</div>
+  if (!user) {
+    return <div>Channel Not Found</div>
   }
 
   return (
     <>
       <div style={{ border: '1px solid black', padding: 8, margin: 8 }}>
         <div>The data in this box is server rendered</div>
-        <div>Name: {hashtag.name}</div>
+        <div>Name: {user.name}</div>
+        <div>Username: {user.username}</div>
       </div>
       {videos.map((video) => (
         <div key={video.encoded_id}>
           <div>{video.caption}</div>
           <Link
-            href="/hashtags/[tag]/videos/[videoId]"
-            as={`/hashtags/${tag}/videos/${video.encoded_id}`}
+            href="/[username]/videos/[videoId]"
+            as={`/${username}/videos/${video.encoded_id}`}
           >
-            <a>{`${window.location.origin}/hashtags/${tag}/videos/${video.encoded_id}`}</a>
+            <a>{`${window.location.origin}/${username}/videos/${video.encoded_id}`}</a>
           </Link>
           <div>
             <Link href="/[username]" as={`/${video.creator.username}`}>
@@ -64,37 +65,34 @@ export function Hashtag({ hashtag, children }) {
   )
 }
 
-export default function HashtagPage() {
-  const router = useRouter()
-  const { tag } = router.query
-
+export default function ChannelPage({ user }) {
   return (
     <>
       <Head>
-        <title>{tag} - Firework</title>
+        <title>{user.name} - Firework</title>
       </Head>
     </>
   )
 }
 
-HashtagPage.getLayout = (page) => {
+ChannelPage.getLayout = (page) => {
   return (
     <TabLayout>
-      <Hashtag {...page.props}>{page}</Hashtag>
+      <Channel {...page.props}>{page}</Channel>
     </TabLayout>
   )
 }
 
 export async function getServerSideProps(context) {
-  const { tag } = context.params
-  let hashtag = null
+  const { username } = context.params
+  let user = null
   try {
-    const response = await axios.get(`/api/hashtags/${tag}`)
-    hashtag = response.data
+    const response = await axios.get(`/api/users/${username}`)
+    user = response.data
   } catch (error) {}
   return {
     props: {
-      hashtag: hashtag
+      user: user
     }
   }
 }
