@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.9852 0.2053 16.836 0.2053 16.836 16 0.9852 16"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-472.000000, -967.000000)">
+            <g id="Group-12" transform="translate(379.000000, 966.000000)">
+                <g id="Facebook" transform="translate(93.000000, 0.794700)">
+                    <g id="Group-3" transform="translate(0.000000, -0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M15.4742,0.2053 L2.3482,0.2053 C1.5952,0.2053 0.9852,0.8143 0.9852,1.5673 L0.9852,14.6383 C0.9852,15.3903 1.5952,16.0003 2.3482,16.0003 L9.3072,16.0003 L9.3072,9.7053 L7.6052,9.7053 L7.6052,7.4153 L9.3072,7.4153 C9.3072,7.4153 9.3092,6.7703 9.3072,6.5563 C9.2982,5.7553 9.2652,4.5093 10.2842,3.5073 C11.2512,2.5563 12.3672,2.5483 13.1142,2.5473 C13.4232,2.5463 14.3512,2.5473 14.3512,2.5473 L14.3512,4.8963 C14.3512,4.8963 13.1892,4.7083 12.5832,5.0063 C11.9452,5.3193 11.8002,6.0193 11.8002,6.5503 L11.8002,7.4153 L14.3512,7.4153 L14.3512,9.7053 L11.8002,9.7053 L11.8002,16.0003 L15.4742,16.0003 C16.2262,16.0003 16.8362,15.3903 16.8362,14.6383 L16.8362,1.5673 C16.8362,0.8143 16.2262,0.2053 15.4742,0.2053" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

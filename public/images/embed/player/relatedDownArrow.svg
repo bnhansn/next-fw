@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <filter id="prefix__a" width="119%" height="119%" x="-9.5%" y="-4.9%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".05" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <path id="prefix__b" d="M12.005 22.8C6.085 22.8 1.2 17.914 1.2 12.005 1.2 6.085 6.096 1.2 12.016 1.2 17.925 1.2 22.8 6.086 22.8 12.005c0 5.91-4.886 10.795-10.795 10.795zm-.605-5.429l4.458-4.197c.657-.626.657-1.701 0-2.328L11.4 6.66c-.387-.365-.95-.386-1.305-.031-.366.355-.397.97-.021 1.326l4.332 4.05-4.332 4.072c-.355.344-.376.94.01 1.315.324.324.971.303 1.316-.02z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="rotate(-90 12 12)">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="#FFF" stroke="#9B9B9B" stroke-width=".1" xlink:href="#prefix__b"/>
+    </g>
+</svg>

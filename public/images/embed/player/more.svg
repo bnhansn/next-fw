@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <filter id="prefix__a" width="185.7%" height="185.7%" x="-42.9%" y="-22%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".05" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <filter id="prefix__c" width="185.7%" height="185.7%" x="-42.9%" y="-22%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".05" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <filter id="prefix__e" width="185.7%" height="185.7%" x="-42.9%" y="-22%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".05" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <circle id="prefix__b" cx="2.391" cy="2.391" r="2.391"/>
+        <circle id="prefix__d" cx="11" cy="2.391" r="2.391"/>
+        <circle id="prefix__f" cx="19.609" cy="2.391" r="2.391"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(9 17.5)">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="#FFF" stroke="#9B9B9B" stroke-width=".1" xlink:href="#prefix__b"/>
+        <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__d"/>
+        <use fill="#FFF" stroke="#9B9B9B" stroke-width=".1" xlink:href="#prefix__d"/>
+        <g>
+            <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+            <use fill="#FFF" stroke="#9B9B9B" stroke-width=".1" xlink:href="#prefix__f"/>
+        </g>
+    </g>
+</svg>
