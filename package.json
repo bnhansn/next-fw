@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "API_HOST=http://localhost:4000 next dev",
-    "build": "next build",
-    "start": "API_HOST=https://vercel.sandbox.fireworktv.com next start"
+    "build": "API_HOST=https://vercel.sandbox.fireworktv.com next build",
+    "start": "next start"
   },
   "dependencies": {
     "@babel/runtime": "^7.10.5",
