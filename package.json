@@ -37,7 +37,7 @@
     "mobile-device-detect": "^0.3.3",
     "moment": "^2.26.0",
     "mousetrap": "^1.6.5",
-    "next": "9.3.5",
+    "next": "11.1.0",
     "number-abbreviate": "^2.0.0",
     "phoenix": "^1.5.3",
     "phoenix_html": "^2.14.2",
