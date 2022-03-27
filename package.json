@@ -33,7 +33,7 @@
     "jsonp": "^0.2.1",
     "langmap": "0.0.16",
     "lodash": "^4.17.14",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mobile-device-detect": "^0.3.3",
     "moment": "^2.26.0",
     "mousetrap": "^1.6.5",
