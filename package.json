@@ -35,7 +35,7 @@
     "lodash": "^4.17.14",
     "minimist": "^1.2.5",
     "mobile-device-detect": "^0.3.3",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "mousetrap": "^1.6.5",
     "next": "9.3.5",
     "number-abbreviate": "^2.0.0",
